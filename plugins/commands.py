@@ -254,6 +254,7 @@ async def start(client, message):
         if is_valid == True:
             await message.reply_text(
                 text=f"<b>Hey {message.from_user.mention}, You are successfully verified !\nNow you have unlimited access for all movies till today midnight.</b>",
+                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("💸 ᴄʜᴇᴄᴋᴏᴜᴛ ᴘʀᴇᴍɪᴜᴍ ᴘʟᴀɴꜱ 💸", callback_data='help')]])) 
                 protect_content=True
             )
             await verify_user(client, userid, token)
@@ -328,7 +329,7 @@ async def start(client, message):
                 await message.reply_text(
                     text="<b>You are not verified !\nKindly verify to continue !</b>",
                     protect_content=False,
-                    reply_markup=InlineKeyboardMarkup(btn)
+                    #reply_markup=InlineKeyboardMarkup(btn)
                 )
                 return
             msg = await client.send_cached_media(
