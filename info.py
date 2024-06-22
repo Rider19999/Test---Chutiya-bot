@@ -48,6 +48,7 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "vkbotsthalpathy")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
+FILE_UPDATE_CHANNEL = int(environ.get('FILE_UPDATE_CHANNEL', '-1002066851846'))
 VERIFY = bool(environ.get('VERIFY', True))
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'tnshort.net')
 SHORTLINK_API = environ.get('SHORTLINK_API', '7dc22a5363e209761ea0bf89ba0232a487387fb9')
