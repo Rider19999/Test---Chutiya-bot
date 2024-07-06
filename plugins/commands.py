@@ -26,7 +26,7 @@ async def start(client, message):
         buttons = [[
                     InlineKeyboardButton('🔰 Add Me To Your Group 🔰', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('⚜️ Contact ⚜️', url="https://t.me/Contact_Deendayal_bot"),
+                    InlineKeyboardButton('⚜️ Trending ⚜️', url="topsearch"),
                     InlineKeyboardButton('🔱 Movie Group 🔱', url='https://t.me/Deendayal_Movies_Group')
                 ],[
                   InlineKeyboardButton('💖 Chat Gpt Bot 💖', url='https://t.me/Deendayal_Chat_Gpt_Bot')
