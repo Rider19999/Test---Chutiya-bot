@@ -27,7 +27,7 @@ MELCOW_VID = environ.get("MELCOW_VID", "https://t.me/Deenu_dhakad")
 SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/15c1ad448dfe472a5cbb8.jpg")
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6646028262').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7186419320').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001881877723').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
@@ -48,7 +48,7 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "vkbotsthalpathy")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
-FILE_UPDATE_CHANNEL = int(environ.get('FILE_UPDATE_CHANNEL', '-1002066851846'))
+FILE_UPDATE_CHANNEL = int(environ.get('FILE_UPDATE_CHANNEL', ''))
 VERIFY = bool(environ.get('VERIFY', True))
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'tnshort.net')
 SHORTLINK_API = environ.get('SHORTLINK_API', '7dc22a5363e209761ea0bf89ba0232a487387fb9')
@@ -62,7 +62,7 @@ CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/Deendayal_dhakad')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/Deenu_dhakad')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 MSG_ALRT = environ.get('MSG_ALRT', 'Hello My Dear Friends ❤️')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002066851846'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002184093206'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Deendayal_dhakad')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
